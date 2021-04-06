@@ -101,6 +101,24 @@
   <h2><div id="word"></div></h2>
   <div id="scoredis"></div>
 </div>
+<%if user_signed_in? %>
+  <%= link_to(user_path(current_user.id), class: 'mipage-btn') do %>
+    <div class='mipage-btn-text'>
+      <%= current_user.nickname %>
+    </div>
+  <% end %>
+  <%= link_to(destroy_user_session_path, method: :delete, class: 'sign-up-btn') do %>
+    <span class='sign-up-btn-text'>ログアウト</span>
+  <% end %>
+<% else %>
+  <%= link_to(new_user_registration_path, class: 'registrations-btn') do %>
+    <span class='registrations-btn-text'>新規登録</span>
+  <% end %>
+  <%= link_to(new_user_session_path, class: 'logout-btn') do %>
+    <span class='logout-btn-text'>ログイン</span>
+  <% end %>
+<% end %>
+
 <div class="ranking">
   <P>ランキング</p>
   <ul class="score-lists">
