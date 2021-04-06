@@ -19,3 +19,27 @@
   border-radius: 13px;
   background-color:red;
 }
+
+// ランキング
+.ranking {
+  margin-top: 200px
+}
+.ranking p {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.score-lists {
+  
+}
+.score-list {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid grey;
+}
+.user-name {
+  margin-right: 50px;
+}
+.user-score {
+  margin-right: 50px;
+}
