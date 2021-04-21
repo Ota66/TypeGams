@@ -102,11 +102,11 @@
   <div id="scoredis"></div>
 </div>
 <%if user_signed_in? %>
-  <%= link_to(user_path(current_user.id), class: 'mipage-btn') do %>
-    <div class='mipage-btn-text'>
-      <%= current_user.nickname %>
-    </div>
-  <% end %>
+  <%# <%= link_to(user_path(current_user.id), class: 'mipage-btn') do %>
+    <%# <div class='mipage-btn-text'> %>
+      <%= current_user.name %>
+    <%# </div> %>
+  <%# <% end %>
   <%= link_to(destroy_user_session_path, method: :delete, class: 'sign-up-btn') do %>
     <span class='sign-up-btn-text'>ログアウト</span>
   <% end %>
