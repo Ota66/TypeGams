@@ -2,10 +2,40 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// ヘッター
+header {
+  height: 80px;
+  background-color:gainsboro;
+}
+.footer-list {
+  float: right;
+  display: flex;
+  padding: 23px;
+}
+.current-user-name {
+  font-size: 20px;
+}
+.sign-up-btn {
+  font-size: 20px;
+  text-decoration: none;
+  margin: auto 40px;
+}
+.registrations-btn {
+  font-size: 20px;
+  text-decoration: none;
+}
+.logout-btn {
+  font-size: 20px;
+  text-decoration: none;
+  margin: auto 40px;
+}
+
+
+
 .contents {
   text-align: center;
   font-size: 50px;
-  margin: 50px 0;
+  margin: 170px 0 50px 0;
 }
 
 .wrap {
@@ -22,7 +52,7 @@
 
 // ランキング
 .ranking {
-  margin-top: 200px
+  margin-top: 310px
 }
 .ranking p {
   text-align: center;
