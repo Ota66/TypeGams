@@ -94,14 +94,14 @@
 <div class="footer-list">
   <%if user_signed_in? %>
     <div class="current-user-name"><%= current_user.name %></div>
-    <%= link_to(destroy_user_session_path, method: :delete, class: 'sign-up-btn') do %>
+    <%= link_to(destroy_user_session_path, method: :delete, class: 'logout-btn') do %>
       <span>ログアウト</span>
     <% end %>
   <% else %>
     <%= link_to(new_user_registration_path, class: 'registrations-btn') do %>
       <span>新規登録</span>
     <% end %>
-    <%= link_to(new_user_session_path, class: 'logout-btn') do %>
+    <%= link_to(new_user_session_path, class: 'login-btn') do %>
       <span>ログイン</span>
     <% end %>
   <% end %>
