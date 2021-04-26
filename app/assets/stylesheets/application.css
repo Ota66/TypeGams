@@ -47,9 +47,20 @@ header {
   margin: auto 40px;
 }
 
-/* ログインページ */
+/* ログイン,新規登録ページ */
 .login-page {
   border: 2px solid gainsboro;
   border-radius: 10px;
-  margin: 200px;
+  margin: 200px 500px;
+}
+.field-name, .field-email, .field-password, .field-password, .field-confirmation, .actions{
+  text-align:center;
+  margin-top: 10px;
+}
+.actions {
+  margin-bottom: 10px;
+}
+.login-page h2 {
+  text-align:center;
+  margin-top: 10px;
 }
