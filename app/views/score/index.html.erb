@@ -90,9 +90,25 @@
     }
   };
 </script>
+<header>
+<div class="footer-list">
+  <%if user_signed_in? %>
+    <div class="current-user-name"><%= current_user.name %></div>
+    <%= link_to(destroy_user_session_path, method: :delete, class: 'logout-btn') do %>
+      <span>ログアウト</span>
+    <% end %>
+  <% else %>
+    <%= link_to(new_user_registration_path, class: 'registrations-btn') do %>
+      <span>新規登録</span>
+    <% end %>
+    <%= link_to(new_user_session_path, class: 'login-btn') do %>
+      <span>ログイン</span>
+    <% end %>
+  <% end %>
+</header>
 
 <div class="contents">
-  <p>タイピング練習サイト</p>
+  <p>TypeGams</p>
 </div>
 <div class="wrap">
   <input type="button" id="start_button" value="スタート" onclick="ready()" style="text-align: center">
@@ -101,6 +117,7 @@
   <h2><div id="word"></div></h2>
   <div id="scoredis"></div>
 </div>
+
 <div class="ranking">
   <P>ランキング</p>
   <ul class="score-lists">

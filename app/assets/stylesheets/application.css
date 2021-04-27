@@ -18,3 +18,49 @@
   box-sizing: border-box;
 }
 
+/* ヘッター */
+header {
+  height: 80px;
+  background-color:gainsboro;
+  border-radius: 5px;
+}
+.footer-list {
+  float: right;
+  display: flex;
+  padding: 23px;
+}
+.current-user-name {
+  font-size: 20px;
+}
+.login-btn {
+  font-size: 20px;
+  text-decoration: none;
+  margin: auto 40px;
+}
+.registrations-btn {
+  font-size: 20px;
+  text-decoration: none;
+}
+.logout-btn {
+  font-size: 20px;
+  text-decoration: none;
+  margin: auto 40px;
+}
+
+/* ログイン,新規登録ページ */
+.login-page {
+  border: 2px solid gainsboro;
+  border-radius: 10px;
+  margin: 200px 500px;
+}
+.field-name, .field-email, .field-password, .field-password, .field-confirmation, .actions{
+  text-align:center;
+  margin-top: 10px;
+}
+.actions {
+  margin-bottom: 10px;
+}
+.login-page h2 {
+  text-align:center;
+  margin-top: 10px;
+}
